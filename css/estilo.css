@@ -1,0 +1,112 @@
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Merriweather', serif;
+    margin: 0;
+}
+
+body{
+    /* font-family: 'Crimson Text', serif; */
+    font-family: 'Courgette', cursive;
+    margin: 0;     
+    background-color: rgb(248, 168, 181);
+}
+
+header{
+    background-color: rgb(0, 0, 0);
+    padding: 10px; 
+    }
+
+footer{
+    clear: both;
+}
+
+footer p{
+    text-align: center;
+    }
+    
+footer iframe{
+    display: block;
+    margin: 0 auto;
+}
+
+    /* regras para colunas e aparecia do cabeçalho e menu  */
+    
+.logo{
+    float: left;
+    width: 32%; 
+}
+header nav{
+    float: right;
+    width: 68%;
+}
+
+header{
+    height: 60px;
+    font-family: 'Fredericka the Great', cursive;
+    color: rgb(241, 98, 122);
+}
+
+/* menu principal  */
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li, header nav ul li a{
+    display: inline-block;
+}
+header nav ul li{
+    margin: 0 20px 0 0;
+}
+
+header nav ul li a{
+    background-color: rgb(0, 0, 0);
+    padding: 5px;
+    color:  rgb(241, 98, 122);
+    padding: 5px;;
+    text-decoration: none;
+}
+
+header nav ul li a:hover{
+    background-color: rgb(241, 98, 122);
+    color: rgb(0, 0, 0);
+    font-family: 'Fredericka the Great', cursive;
+}
+.conteudo{
+    /* limpa a flutuação existente nos elementos do header */
+    clear: both; 
+    padding: 20px;
+}
+
+.coluna1{
+    width: 25%;
+    float: left;
+    margin-bottom: 40px;
+}
+.coluna2{
+   width: 69%;
+   float: right;
+   margin-bottom: 40px; 
+   border-left: 1px dotted #000;
+   padding-left: 98px;
+}
+
+/* Modifica o comportamento das colunas e menu quando acessado no celular */
+@media screen and (max-width: 576px) {
+.coluna1, .coluna2{
+    float: none;
+    width: 100% !important;
+}
+.coluna2{
+    padding: 0;
+    border: none;
+}
+.logo, header nav{
+    float: none;
+    width: 100%;
+}
+header{
+    height: auto;
+}
+.logo h1{
+    font-size: 1em;
+}
+}
